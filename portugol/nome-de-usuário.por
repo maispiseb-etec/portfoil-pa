@@ -1,7 +1,7 @@
 /*
 * Instituição: EtecVAV - Vasco Antonio Vechiarutti
 *
-* Arquivo: cavalos.por
+* Arquivo: nome-de-usuário.por
 * Data: 20/03/2026
 * Autor: Matheus / Sebastian
 * Descrição: 
