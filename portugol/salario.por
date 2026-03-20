@@ -1,7 +1,7 @@
 /*
 * Instituição: EtecVAV - Vasco Antonio Vechiarutti
 *
-* Arquivo: abastecimento.por
+* Arquivo: salario.por
 * Data: 05/03/2026
 * Autor:Sebastian/Matheus
 * Descrição: 
@@ -16,12 +16,17 @@ programa
 	
 	funcao inicio()
 	{
-		real sf, quant_vend,  per_com
-	escreva("calcular salario")
-	escreva("digite o salario fixo do funcionario")
+		real sf, rs_vend,  per_com, decimal, com, sc
+	escreva("calcular salario\n\n")
+	escreva("digite o salario fixo do funcionario: ")
 	leia(sf)
-	escreva("quantos itens o funcionario vendeu")
-	leia(quant_vend)
-	escreva("qual é a porcentagem de comissão do funcionario")
+	escreva("quantos reais o funcionario realizou em vendas: ")
+	leia(rs_vend)
+	escreva("qual é a porcentagem de comissão do funcionario: ")
+	leia(per_com)
+	decimal= per_com/100
+	com= decimal*rs_vend
+	sc=com+sf
+	escreva("o salario do funcionario é de: ",sc)
 	}
 }
