@@ -14,7 +14,7 @@ programa
 	funcao inicio()
 	{
 	real bs, alt, area
- 	escreva("Calculo para área de um trapézio\n")
+ 	escreva("Calculo para área de um triangulo\n")
  	escreva("Digite a medida da base em metros.........:")
  	leia(bs)
  	escreva("Digite a medida da altura em metros.......:")
