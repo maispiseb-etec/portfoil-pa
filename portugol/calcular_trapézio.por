@@ -1,7 +1,7 @@
 /*
 * Instituição: EtecVAV - Vasco Antonio Vechiarutti
 *
-* Arquivo: cavalos.por
+* Arquivo: calcular_trapézio.por
 * Data: 05/03/2026
 * Autor:Matheus Formigoni Mation
 * Descrição: 
