@@ -1,7 +1,7 @@
 /*
 * Instituição: EtecVAV - Vasco Antonio Vechiarutti
 *
-* Arquivo: cavalos.por
+* Arquivo: peso_em_gramas.por
 * Data: 05/03/2026
 * Autor:Matheus Formigoni Mation
 * Descrição: 
