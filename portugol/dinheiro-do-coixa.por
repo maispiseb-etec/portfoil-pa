@@ -3,7 +3,7 @@
 *
 * Arquivo: dinheiro_do_coixa.por
 * Data: 05/03/2026
-* Autor:Matheus Formigoni Mation
+* Autor:Kelvin/ Matheus
 * Descrição: 
 *O caixa do supermercado recebe uma certa quantidade de moedas por 
 *dia. Ler a quantidade de moedas recebidas de acordo com cada um dos 
