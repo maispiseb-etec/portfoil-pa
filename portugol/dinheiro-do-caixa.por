@@ -1,10 +1,11 @@
+
 /*
 * Instituição: EtecVAV - Vasco Antonio Vechiarutti
 *
-* Arquivo: dinheiro_do_caixa.por
+* Arquivo:dinheiro-do-caixa.por
 * Data: 05/03/2026
-* Autor:sebastian/ Matheus
-* Descrição: 
+* Autor: Matheus / Sebastian
+* Descrição:  
 *O caixa do supermercado recebe uma certa quantidade de moedas por 
 *dia. Ler a quantidade de moedas recebidas de acordo com cada um dos 
 *valores 1, 5, 10, 25 e 50 centavos, e ainda moedas de 1 real. Calcular 
