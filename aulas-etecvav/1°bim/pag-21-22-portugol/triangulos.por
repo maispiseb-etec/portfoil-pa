@@ -1,7 +1,7 @@
 /*
 * Instituição: EtecVAV - Vasco Antonio Vechiarutti
 *
-* Arquivo: triangulos.por
+* Arquivo: triangolos.por
 * Data: 05/03/2026
 * Autor: Matheus
 * Descrição: 
@@ -35,8 +35,11 @@ se (num1 != num2 e num2 != num3 e num1 != num3)
 {
 	escreva("esse triangulo é escaleno")
 		}
-se (num1 	
-{}
+se ((num1 == num2 e num2 != num3) ou (num3 == num1 e num1 != num2) ou (num2 == num3 e num3 != num1))
+{
+	escreva("esse triangulo é isósceles")	
+	
+		}
 		}
 senao
 {
