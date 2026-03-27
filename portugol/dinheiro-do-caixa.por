@@ -12,6 +12,12 @@
 *e exibir o valor recebido de cada um dos tipos de moeda e a soma total
 *em moedas.
 */
+programa
+{
+	
+	funcao inicio()
+	{
+
 inteiro  m1, m5, m10, m25, m50, m1real
  real dt 
  	escreva("calculo de dinheiro recebido em moedas\n\n")
@@ -31,3 +37,5 @@ inteiro  m1, m5, m10, m25, m50, m1real
    	dt=(m1*0.01)+(m5*0.05)+(m10*0.10)+(m25*0.25)+(m50*0.50)+(m1real*1)
 
    	escreva("o caixa recebeu ao todo: ",dt," reais")
+   		}
+}
