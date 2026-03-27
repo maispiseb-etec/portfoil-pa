@@ -1,9 +1,9 @@
 /*
 * Instituição: EtecVAV - Vasco Antonio Vechiarutti
 *
-* Arquivo: dinheiro_do_coixa.por
+* Arquivo: dinheiro_do_caixa.por
 * Data: 05/03/2026
-* Autor:Kelvin/ Matheus
+* Autor:sebastian/ Matheus
 * Descrição: 
 *O caixa do supermercado recebe uma certa quantidade de moedas por 
 *dia. Ler a quantidade de moedas recebidas de acordo com cada um dos 
