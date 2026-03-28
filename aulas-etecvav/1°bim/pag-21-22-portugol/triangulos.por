@@ -35,6 +35,10 @@ se (num1 != num2 e num2 != num3 e num1 != num3)
 {
 	escreva("esse triangulo é escaleno")
 		}
+
+		
+/* eu poderia usado a condição "SENAO{}" para resolver mais facilmente*/
+
 se ((num1 == num2 e num2 != num3) ou (num3 == num1 e num1 != num2) ou (num2 == num3 e num3 != num1))
 {
 	escreva("esse triangulo é isósceles")	
