@@ -27,7 +27,8 @@ se  (vlrc < 100)
 		
 		escreva ("não há desconto nesta compra")	
 				}
-
+senao
+{
 				
 se  (vlrc>=100 e vlrc<500)
 	{
@@ -43,6 +44,6 @@ senao
 		escreva ("o preço total é de ",desc)
 				}	
 
-				
+			}	
 	}
 }
