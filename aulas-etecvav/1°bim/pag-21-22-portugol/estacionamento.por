@@ -1,3 +1,4 @@
+
 /*
 * Instituição: EtecVAV - Vasco Antonio Vechiarutti
 * Arquivo: estacionamento.por
@@ -15,36 +16,38 @@ programa
 	funcao inicio()
 	{
 		
-	inteiro tempo, hora, total, resto
+	inteiro tempo, hora, valor
 	
 	escreva("calculo de estacionamento\n\n")
-	escreva("informe o tempo de permanencia no estacionamento e minutos")
+	escreva("informe o tempo de permanencia no estacionamento e minutos: ")
 	leia(tempo)
 
 	se (tempo <= 60)  
 	{		
-		escreva("O total a ser pago são 2 reais")
-				}
+		valor = 2
+		escreva("O total a ser pago são: ", valor, " reais")
+	}
 	se (tempo > 60 e tempo <=120 )
 	{
-		escreva("O total a ser pago são 4 reais")	
-					}
-	se (tempo >120 )
-	{	
-		
-		hora = tempo / 60
-		
-		total = 4 + ( hora-2)
-		
-		resto = tempo % 60
-		
-		se (tempo % 60 != 0 ){
-			escreva (hora,"\n\n")
-			escreva (resto)
-		
-			
-		}
-				}
+		valor = 4
+		escreva("O total a ser pago são: ",valor, " reais")	
 	}
+	se (tempo > 120 )
+	{				
+		se (tempo % 60 == 0 ){
+			hora = tempo / 60	
+			valor = 4 + hora - 2
+			escreva("O total a ser pago são: ",valor, " reais")			
+		}
+		senao {
+			hora = tempo / 60
+			valor = 4 + hora - 1
+			escreva("O total a ser pago são: ",valor, " reais")			
+		}
+	}
+	// A função inicio a baixo seve para indicar que o programa é continuo e infinito 
+		inicio()
+	}	
+}
 }
 	
