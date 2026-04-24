@@ -6,6 +6,7 @@
  Pesquise o que é o Portugol Studio e para que ele é utilizado.
 ### Resposta
 Portugol Studio é um aplicativo web que tambem pode ser instalado usado para pragramar diversos tipos de aplivativos e programas, podendo realizar pequenas contas como 2+2=4 até calcular cariaveis, potencias, areas e muito mais. alem disso ele pode analisar condições como, se o numero X for maior que Y ele pode escreva X ou aucontrario.
+
 ---
 ### Crie um pequeno programa que leia um número mostre o número multiplicado por 2
 ---
