@@ -20,6 +20,6 @@ trexo de codigo
 	escreva(num," mutiplicado por 2 é igual a ",numx2)
 ```
 ### Uma captura de tela da execução
-![](/portfoil-pa/aulas-etecvav/1°bim/programacao-e-algoritimos/questionario/imagens/foto-programa.png)
+![](./imagens/foto-programa.png)
 
 A imagem mostra o numero 20 sendo atribuido a variavel "num" e depois sendo multiplicado por 2 assim tendo o resutado da variavel "numx2" que mostra que o resutado é 40
