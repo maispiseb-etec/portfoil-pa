@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>O que é CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<table border="0" width="100%" cellspacing="0">
+
+    
+    <tr class="header">
+        <td colspan="2">
+            <h1>CSS na Prática</h1>
+            <p>Entendendo Seletores, Propriedades e Valores</p>
+        </td>
+    </tr>
+
+   
+    <tr class="menu">
+        <td colspan="2">
+            <a href="#css">O que é CSS</a> |
+            <a href="#seletores">Seletores</a> |
+            <a href="#propriedades">Propriedades</a> |
+            <a href="#exemplo">Exemplo</a>
+        </td>
+    </tr>
+
+    
+    <tr>
+        <td width="70%" class="conteudo">
+
+            <h2 id="css">O que é CSS?</h2>
+            <img src="css-logo.png" width="500">
+            
+            <p>
+                CSS (Cascading Style Sheets) é uma linguagem utilizada para definir a aparência
+                de páginas feitas em HTML. Enquanto o HTML organiza o conteúdo, o CSS é responsável
+                por deixar o site visualmente mais bonito e organizado, controlando cores, fontes,
+                tamanhos, espaçamentos e posicionamento dos elementos.
+            </p>
+            <p>
+                Com o uso do CSS, é possível separar o conteúdo da apresentação, o que facilita a
+                manutenção do site e permite reaproveitar estilos em várias páginas diferentes.
+                Isso torna o desenvolvimento mais eficiente e profissional.
+            </p>
+
+            <h2 id="seletores">Seletores</h2>
+            <img src="seletor.svg" width="400">
+            <p>
+                Os seletores são a parte do CSS responsável por indicar quais elementos do HTML
+                receberão determinado estilo. Eles funcionam como uma forma de “apontar” para os
+                elementos que queremos modificar dentro da página.
+            </p>
+            <p>
+                Existem diferentes tipos de seletores, como o seletor de elemento, que estiliza
+                todas as tags iguais (por exemplo, todos os parágrafos), o seletor de classe, que
+                permite aplicar estilos a vários elementos específicos, e o seletor de id, que é
+                usado para estilizar apenas um elemento único na página.
+            </p>
+
+            <ul>
+                <li>p → seleciona todos os parágrafos</li>
+                <li>.classe → seleciona elementos com classe</li>
+                <li>#id → seleciona um elemento específico</li>
+            </ul>
+
+            <h2 id="propriedades">Propriedades e Valores</h2>
+            <img src="propriedade.jpg" width="300">
+            <p>
+                No CSS, cada regra é formada por propriedades e valores. A propriedade define qual
+                aspecto do elemento será alterado, como a cor do texto, o tamanho da fonte ou o
+                espaçamento. Já o valor define como essa alteração será aplicada.
+            </p>
+            <p>
+                Por exemplo, ao utilizar "color: blue;", estamos dizendo que a propriedade é a cor
+                do texto e o valor é azul. Essa estrutura é fundamental para o funcionamento do CSS
+                e está presente em todas as regras de estilização.
+            </p>
+
+            <p class="destaque">
+                Exemplo: color: blue;
+            </p>
+
+            <h2 id="exemplo">Exemplo de Código</h2>
+
+<pre>
+p {
+    color: blue;
+    font-size: 18px;
+}
+</pre>
+
+            <p>
+                Nesse exemplo, todos os parágrafos da página terão a cor azul e um tamanho de fonte
+                de 18 pixels. Isso mostra como o CSS consegue alterar vários elementos ao mesmo tempo
+                de forma simples e eficiente.
+            </p>
+
+        </td>
+
+        <td width="30%" class="lateral">
+            
+
+    <h3>Sobre CSS</h3>
+
+    <img src="iconecss.png" width="300">
+
+    <p>
+    O CSS é essencial para deixar sites mais bonitos.
+    </p>
+
+            <h3>Dica Importante</h3>
+            <p>
+                O uso do CSS ajuda a manter o código organizado e facilita futuras alterações.
+                Em vez de mudar cada elemento individualmente, é possível modificar apenas uma regra
+                e aplicar a mudança em todo o site.
+            </p>
+
+            <h3>Referências</h3>
+
+<ul>
+
+    <li>
+        W3Schools. "CSS Tutorial".
+        Disponível em:
+        <br>
+        <a href="https://www.w3schools.com/css/" target="_blank">
+        https://www.w3schools.com/css/
+        </a>
+        <br>
+        Utilizado como apoio para exemplos práticos e explicações simples.
+    </li>
+
+    <br>
+
+    <li>
+        Vídeo de Youtube "Como usar a regra 60 30 10 em interfaces digitais".
+        Disponível em:
+        <br>
+        <a href="https://www.youtube.com/watch?v=pZK0ZZLkt2E" target="_blank">
+       https://www.youtube.com/watch?v=pZK0ZZLkt2E
+        </a>
+        <br>
+        Utilizado como apoio para entender a regra 60–30–10 que foi aplicada no site para distribuir melhor as cores, utilizando, por exemplo, uma cor clara
+         como base, tons de azul para a estrutura e uma cor de destaque em laranja para chamar a atenção. Isso torna o site mais organizado, agradável
+          visualmente e mais fácil de navegar.<br>
+    </li>
+
+    <br>
+
+    <li>
+        Vídeo de Youtube: "O QUE É CSS? (Seletores, Propriedades e Valores)".
+        Disponível em:
+        <br>
+        <a href="https://www.youtube.com/watch?v=LWU2OR19ZG4" target="_blank">
+        https://www.youtube.com/watch?v=LWU2OR19ZG4
+        </a>
+        <br>
+        Fonte principal para a explicação do conteúdo apresentado no site.
+    </li>
+
+</ul>
+
+<p>
+As informações foram estudadas e reescritas com linguagem própria para melhor compreensão do conteúdo.
+</p>
+        </td>
+    </tr>
+
+    <tr class="footer">
+        <td colspan="2">
+            <p>Por: Sebastian A. S. Diaz e Matheus F. Mation</p>
+        </td>
+    </tr>
+
+</table>
+
+</body>
+</html>
