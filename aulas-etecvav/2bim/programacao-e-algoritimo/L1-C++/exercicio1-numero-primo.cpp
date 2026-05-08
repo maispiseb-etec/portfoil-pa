@@ -1,18 +1,15 @@
 #include <iostream>
 
 int main() {
-    int num; 
-    int div;
-    int i = 1;
+    int num, div, i; 
     std::cout << "digite um numero: ";
     std::cin >> num;
-    for( i; i <= num; i++) {
-      std::cout << i << "\n";
-      if (num % i == 0) { 
-          div++; 
-          std::cout << i << "e divisivel\n";
-      }  
+    for( i=1; i <= num; i++){
+         if (num % i == 0) { 
+         div++; 
+         std::cout << i << " é divisivel por "<<num<<" \n";
+      }    
     }
-    std::cout << div;
+    std::cout << num <<" é divisivel por "<< div<<" numeros";
     return 0;
 }
