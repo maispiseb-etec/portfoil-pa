@@ -1,3 +1,9 @@
+// Matheus F. Mation
+// Sebastian A. S. Diaz
+// 22.05.2026
+// O que o programa faz
+//Lê um número inteiro, calcula e exibi separadamente
+//as potências de 2^0 até 2^(esse número).
 #include <iostream>
 #include <cmath>
 int main() {
