@@ -1,0 +1,29 @@
+// Sebastian A. S. Diaz
+// 19.06.2026
+// Lê 5 números inteiros e verifica se estão em ordem crescente, decrescente ou não ordenados.
+#include <iostream>
+
+int main() {
+    int n1, n2, n3, n4, n5;
+
+    std::cout << "digite o primeiro numero: ";
+    std::cin >> n1;
+    std::cout << "digite o segundo numero: ";
+    std::cin >> n2;
+    std::cout << "digite o terceiro numero: ";
+    std::cin >> n3;
+    std::cout << "digite o quarto numero: ";
+    std::cin >> n4;
+    std::cout << "digite o quinto numero: ";
+    std::cin >> n5;
+
+    if (n1 < n2 && n2 < n3 && n3 < n4 && n4 < n5) {
+        std::cout << "Em ordem crescente\n";
+    } else if (n1 > n2 && n2 > n3 && n3 > n4 && n4 > n5) {
+        std::cout << "Em ordem decrescente\n";
+    } else {
+        std::cout << "Nao ordenados\n";
+    }
+
+    return 0;
+}
