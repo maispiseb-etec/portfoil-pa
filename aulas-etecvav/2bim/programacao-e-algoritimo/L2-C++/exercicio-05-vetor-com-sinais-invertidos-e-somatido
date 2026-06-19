@@ -1,0 +1,30 @@
+// Sebastian A. S. Diaz
+// 19.06.2026
+// Lê 10 números, cria um segundo vetor com os sinais invertidos e soma os positivos.
+#include <iostream>
+
+int main() {
+    int v1[10], v2[10];
+    int i;
+    int somaPositivos = 0;
+
+    for (i = 0; i < 10; i++) {
+        std::cout << "digite o numero " << i << ": ";
+        std::cin >> v1[i];
+        
+        v2[i] = v1[i] * -1; 
+    }
+
+    for (i = 0; i < 10; i++) {
+        if (v1[i] > 0) {
+            somaPositivos = somaPositivos + v1[i];
+        }
+        if (v2[i] > 0) {
+            somaPositivos = somaPositivos + v2[i];
+        }
+    }
+
+    std::cout << "\nA soma dos valores positivos eh: " << somaPositivos << "\n";
+
+    return 0;
+}
