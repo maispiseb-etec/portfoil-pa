@@ -1,0 +1,25 @@
+// Sebastian A. S. Diaz
+// 19.06.2026
+// Lê dois números inteiros e exibe o resultado das quatro operações matemáticas.
+#include <iostream>
+
+int main() {
+    int n1, n2;
+    
+    std::cout << "digite o primeiro numero: ";
+    std::cin >> n1;
+    std::cout << "digite o segundo numero: ";
+    std::cin >> n2;
+
+    std::cout << "Adicao: " << n1 + n2 << "\n";
+    std::cout << "Subtracao: " << n1 - n2 << "\n";
+    std::cout << "Multiplicacao: " << n1 * n2 << "\n";
+    
+    if (n2 != 0) {
+        std::cout << "Divisao: " << (float)n1 / n2 << "\n";
+    } else {
+        std::cout << "Nao eh possivel dividir por zero!\n";
+    }
+
+    return 0;
+}
