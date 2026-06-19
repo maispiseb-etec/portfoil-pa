@@ -1,0 +1,25 @@
+// Sebastian A. S. Diaz
+// 19.06.2026
+// Lê uma palavra e substitui todas as suas vogais por '*'.
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string palavra;
+    int i;
+
+    std::cout << "digite uma palavra: ";
+    std::cin >> palavra;
+
+    // Percorre letra por letra da palavra lida
+    for (i = 0; i < palavra.length(); i++) {
+        if (palavra[i] == 'a' || palavra[i] == 'e' || palavra[i] == 'i' || palavra[i] == 'o' || palavra[i] == 'u' ||
+            palavra[i] == 'A' || palavra[i] == 'E' || palavra[i] == 'I' || palavra[i] == 'O' || palavra[i] == 'U') {
+            palavra[i] = '*';
+        }
+    }
+
+    std::cout << "Palavra modificada: " << palavra << "\n";
+
+    return 0;
+}
