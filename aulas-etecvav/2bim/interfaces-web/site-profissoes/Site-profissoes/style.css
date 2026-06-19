@@ -1,0 +1,156 @@
+/* Remove margens e espaçamentos padrões dos elementos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define a aparência geral do site */
+body{
+    background-color: #f0f4ff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+}
+
+/* Estilização do cabeçalho */
+header{
+    background-color: #003366;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1{
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Estilização dos links do menu */
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    padding: 8px;
+}
+
+/* Efeito quando o mouse passa sobre o link */
+nav a:hover{
+    background-color: #0055aa;
+    border-radius: 5px;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+section{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+section h2{
+    margin-bottom: 15px;
+    color: #003366;
+}
+
+section p{
+    margin-bottom: 15px;
+    line-height: 25px;
+}
+
+img{
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+ul{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+
+th{
+    background-color: #003366;
+    color: white;
+}
+
+th, td{
+    padding: 10px;
+    text-align: center;
+}
+
+footer{
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* --- ESTILO BASE (MOBILE-FIRST) --- */
+/* Focado em telas pequenas (iPhone/Android) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* No mobile, menus centralizados são comuns */
+}
+
+main {
+    flex: 1; /* Faz o main ocupar o espaço restante, empurrando o rodapé */
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+/* --- MEDIA QUERY: TABLETS (Telas acima de 600px) --- */
+@media (min-width: 600px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+    
+    main {
+        padding: 40px;
+    }
+}
+
+/* --- MEDIA QUERY: COMPUTADOR (Telas acima de 1024px) --- */
+@media (min-width: 1024px) {
+    main {
+        max-width: 1000px; /* Evita que o texto fique largo demais no PC */
+        margin: 0 auto;    /* Centraliza o conteúdo no meio da tela */
+        text-align: left;  /* Alinhamento padrão de leitura em desktop */
+    }
+
+    nav ul {
+        justify-content: flex-start; /* Menu alinhado à esquerda no PC */
+        padding-left: 50px;
+    }
+}
