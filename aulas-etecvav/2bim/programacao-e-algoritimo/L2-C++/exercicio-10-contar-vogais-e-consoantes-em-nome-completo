@@ -1,0 +1,34 @@
+// Sebastian A. S. Diaz
+// 19.06.2026
+// Lê um nome completo e exibe a quantidade de vogais e de consoantes.
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string nome;
+    int i;
+    int vogais = 0;
+    int consoantes = 0;
+
+    std::cout << "digite o nome completo: ";
+    std::getline(std::cin, nome); // Permite ler o nome com espaços
+
+    for (i = 0; i < nome.length(); i++) {
+        char letra = nome[i];
+
+        // Se for uma vogal (maiúscula ou minúscula)
+        if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u' ||
+            letra == 'A' || letra == 'E' || letra == 'I' || letra == 'O' || letra == 'U') {
+            vogais++;
+        }
+        // Se for uma letra do alfabeto de 'a' até 'z' mas não for vogal, é consoante
+        else if ((letra >= 'a' && letra <= 'z') || (letra >= 'A' && letra <= 'Z')) {
+            consoantes++;
+        }
+    }
+
+    std::cout << "Quantidade de vogais: " << vogais << "\n";
+    std::cout << "Quantidade de consoantes: " << consoantes << "\n";
+
+    return 0;
+}
