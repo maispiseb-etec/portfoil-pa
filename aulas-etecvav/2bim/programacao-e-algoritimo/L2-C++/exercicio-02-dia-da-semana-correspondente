@@ -1,0 +1,25 @@
+// Sebastian A. S. Diaz 
+// 19.06.2026
+// Lê um número de 1 a 7 e exibe o dia da semana correspondente.
+#include <iostream>
+
+int main() {
+    int num;
+    
+    std::cout << "digite um numero de 1 a 7: ";
+    std::cin >> num;
+
+    if (num == 1) std::cout << "Domingo\n";
+    if (num == 2) std::cout << "Segunda-feira\n";
+    if (num == 3) std::cout << "Terca-feira\n";
+    if (num == 4) std::cout << "Quarta-feira\n";
+    if (num == 5) std::cout << "Quinta-feira\n";
+    if (num == 6) std::cout << "Sexta-feira\n";
+    if (num == 7) std::cout << "Sabado\n";
+    
+    if (num < 1 || num > 7) {
+        std::cout << "Numero invalido!\n";
+    }
+
+    return 0;
+}
