@@ -1,0 +1,24 @@
+// Sebastian A. S. Diaz
+// 19.06.2026
+// Lê o raio de 5 círculos, calcula a área de cada um e exibe a soma total das áreas.
+#include <iostream>
+
+int main() {
+    float raio;
+    float area;
+    float somaAreas = 0;
+    int i;
+
+    for (i = 1; i <= 5; i++) {
+        std::cout << "digite o raio do circulo " << i << ": ";
+        std::cin >> raio;
+        
+        // Cálculo da área: pi * raio * raio
+        area = 3.14159 * raio * raio;
+        somaAreas = somaAreas + area;
+    }
+
+    std::cout << "A soma das areas dos 5 circulos eh: " << somaAreas << "\n";
+
+    return 0;
+}
