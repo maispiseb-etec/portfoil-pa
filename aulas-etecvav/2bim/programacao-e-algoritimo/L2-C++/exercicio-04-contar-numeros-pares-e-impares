@@ -1,0 +1,27 @@
+// Sebastian A. S. Diaz
+// 19.06.2026
+// Lê 15 números em um vetor, conta e exibe a quantidade de pares e ímpares.
+#include <iostream>
+
+int main() {
+    int vetor[15];
+    int i;
+    int pares = 0;
+    int impares = 0;
+
+    for (i = 0; i < 15; i++) {
+        std::cout << "digite o valor " << i + 1 << ": ";
+        std::cin >> vetor[i];
+
+        if (vetor[i] % 2 == 0) {
+            pares++;
+        } else {
+            impares++;
+        }
+    }
+
+    std::cout << "\nQuantidade de numeros pares: " << pares << "\n";
+    std::cout << "Quantidade de numeros impares: " << impares << "\n";
+
+    return 0;
+}
