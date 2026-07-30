@@ -3,5 +3,5 @@
 ![alt text](./imagens/image-fixa-medica.png)
 <p><h1>Reresolução do exercício</h1></p>
 <h3>DER(BRmodelo)</h3>
-![](./imagens/image-DER-BRmodelo.png)
+<img src="image-DER-BRmodelo.png" width="400">
 <h3>Normalização</h3>
