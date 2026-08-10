@@ -1,0 +1,210 @@
+/* =========================================================
+   style.css
+   Folha de estilo externa do site "Computação Quântica"
+   Trabalho acadêmico — complementa o Bootstrap 5.3.7
+   Paleta inspirada em computação quântica: tons de azul
+   profundo (espaço/laboratório), ciano (qubit/laser) e
+   roxo/magenta (energia quântica). Sem degradês — cores
+   sólidas.
+   ========================================================= */
+
+:root {
+    --quantum-dark: #0b0f2e;     /* azul quase-preto, fundo de laboratório */
+    --quantum-blue: #1a2a6c;     /* azul profundo */
+    --quantum-accent: #00d9ff;   /* ciano - "laser" de qubit */
+    --quantum-purple: #7b2ff7;   /* roxo - energia quântica */
+    --quantum-magenta: #d6249f;  /* magenta - emaranhamento */
+    --quantum-green: #00e0a4;    /* verde-água - estado quântico */
+    --quantum-light: #eef2ff;    /* fundo claro do conteúdo */
+}
+
+body {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background-color: var(--quantum-light);
+    color: #1c1c2b;
+}
+
+/* ---------- Navbar ---------- */
+.navbar-quantum {
+    background-color: var(--quantum-dark);
+    border-bottom: 3px solid var(--quantum-accent);
+}
+
+.navbar-quantum .navbar-brand,
+.navbar-quantum .nav-link {
+    color: #ffffff !important;
+}
+
+.navbar-quantum .nav-link.active {
+    color: var(--quantum-accent) !important;
+    font-weight: 600;
+}
+
+.navbar-quantum .nav-link:hover {
+    color: var(--quantum-accent) !important;
+}
+
+/* ---------- Hero ---------- */
+.hero-quantum {
+    background-color: var(--quantum-dark);
+    color: #ffffff;
+    padding: 5rem 0;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 4px solid var(--quantum-purple);
+}
+
+/* pontinhos decorativos lembrando partículas / estados quânticos */
+.hero-quantum::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(var(--quantum-accent) 1.5px, transparent 1.5px);
+    background-size: 26px 26px;
+    opacity: 0.15;
+}
+
+.hero-quantum .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* ---------- Títulos de seção ---------- */
+.section-title {
+    border-left: 6px solid var(--quantum-purple);
+    padding-left: 0.75rem;
+    margin-bottom: 1.5rem;
+    color: var(--quantum-blue);
+}
+
+/* ---------- Cards ---------- */
+.card-quantum {
+    border: none;
+    border-top: 5px solid var(--quantum-accent);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-quantum:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0.75rem 1.5rem rgba(26, 42, 108, 0.25);
+}
+
+/* Alterna as cores do topo dos cards dentro de uma mesma linha (.row) */
+.row > div:nth-child(4n+1) .card-quantum { border-top-color: var(--quantum-accent); }
+.row > div:nth-child(4n+2) .card-quantum { border-top-color: var(--quantum-magenta); }
+.row > div:nth-child(4n+3) .card-quantum { border-top-color: var(--quantum-purple); }
+.row > div:nth-child(4n+4) .card-quantum { border-top-color: var(--quantum-green); }
+
+.row > div:nth-child(4n+1) .card-quantum i { color: var(--quantum-blue) !important; }
+.row > div:nth-child(4n+2) .card-quantum i { color: var(--quantum-magenta) !important; }
+.row > div:nth-child(4n+3) .card-quantum i { color: var(--quantum-purple) !important; }
+.row > div:nth-child(4n+4) .card-quantum i { color: var(--quantum-green) !important; }
+
+/* ---------- Badges de qubit (decorativo) ---------- */
+.qubit-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: var(--quantum-purple);
+    color: #fff;
+    font-weight: bold;
+    margin-right: 0.6rem;
+}
+
+.qubit-badge:nth-of-type(2) {
+    background-color: var(--quantum-magenta);
+}
+
+.qubit-badge:nth-of-type(3) {
+    background-color: var(--quantum-accent);
+    color: #0b0f2e;
+}
+
+/* ---------- Referências / notas de rodapé ---------- */
+.ref-note {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.ref-note a {
+    color: var(--quantum-blue);
+    text-decoration: none;
+}
+
+.ref-note a:hover {
+    text-decoration: underline;
+}
+
+.source-card {
+    border-left: 5px solid var(--quantum-purple);
+    background-color: #ffffff;
+}
+
+.source-card:nth-of-type(5n+1) { border-left-color: var(--quantum-purple); }
+.source-card:nth-of-type(5n+2) { border-left-color: var(--quantum-accent); }
+.source-card:nth-of-type(5n+3) { border-left-color: var(--quantum-magenta); }
+.source-card:nth-of-type(5n+4) { border-left-color: var(--quantum-blue); }
+.source-card:nth-of-type(5n+5) { border-left-color: var(--quantum-green); }
+
+/* ---------- Footer ---------- */
+footer.footer-quantum {
+    background-color: var(--quantum-dark);
+    color: #cfd6ff;
+    border-top: 3px solid var(--quantum-accent);
+}
+
+footer.footer-quantum a {
+    color: var(--quantum-accent);
+}
+
+/* ---------- Citação inline (número de referência) ---------- */
+.cite {
+    font-size: 0.75rem;
+    vertical-align: super;
+    color: var(--quantum-magenta);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.cite:hover {
+    text-decoration: underline;
+    color: var(--quantum-purple);
+}
+
+/* ---------- Botões personalizados ---------- */
+.btn-primary {
+    background-color: var(--quantum-blue);
+    border-color: var(--quantum-blue);
+}
+
+.btn-primary:hover {
+    background-color: var(--quantum-purple);
+    border-color: var(--quantum-purple);
+}
+
+.btn-outline-primary {
+    color: var(--quantum-purple);
+    border-color: var(--quantum-purple);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--quantum-purple);
+    border-color: var(--quantum-purple);
+    color: #fff;
+}
+
+/* ---------- Alertas com toque colorido ---------- */
+.alert-primary {
+    background-color: #eaf0ff;
+    border-left: 5px solid var(--quantum-accent);
+    color: var(--quantum-blue);
+}
+
+.alert-secondary {
+    background-color: #f3ecff;
+    border-left: 5px solid var(--quantum-purple);
+    color: #4a1e8c;
+}

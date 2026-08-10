@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computação Quântica | A Pesquisa</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-quantum">
+<div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Computação Quântica</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+            <li class="nav-item"><a class="nav-link active" href="pesquisa.html">A Pesquisa</a></li>
+            <li class="nav-item"><a class="nav-link" href="fontes.html">Fontes</a></li>
+        </ul>
+</div>
+</div>
+</nav>
+
+<header class="hero-quantum">
+<div class="container">
+        <h1>A Pesquisa</h1>
+        <p class="mb-0">O que é, como funciona e para que serve a computação quântica</p>
+</div>
+</header>
+
+<div class="container my-5">
+
+<div class="alert alert-primary">
+        Este texto foi escrito com as próprias palavras, depois de estudar algumas fontes.
+        Os números entre colchetes, como <span class="cite">[1]</span>, mostram de onde veio
+        cada informação específica. A lista completa está na página
+        <a href="fontes.html">Fontes</a>.
+</div>
+
+<!-- 1. O que é -->
+<section class="mb-5">
+         <h2 class="section-title">1. O que é computação quântica?</h2>
+        <p>
+   A computação quântica é um jeito diferente de fazer os computadores calcularem.
+            Em vez de usar só as regras da física que enxergamos no nosso dia a dia, ela usa
+            regras da física quântica, que é a parte da física que estuda o comportamento de
+            partículas muito pequenas, como elétrons e fótons <span class="cite">[4]</span>. Nessa
+            escala tão pequena, a matéria se comporta de um jeito bem diferente do que estamos
+            acostumados a ver no mundo grande, macroscópico.
+        </p>
+        <p>
+            
+             É importante entender que a computação quântica não veio para substituir o computador
+            comum no dia a dia. Ela não vai deixar seu celular ou seu computador de casa mais
+            rápido para jogar ou navegar na internet. Ela serve para resolver alguns tipos de
+            problema específicos, que são muito difíceis — ou quase impossíveis — de calcular com
+            a tecnologia atual, como simular o comportamento de moléculas complexas ou testar um
+            número gigantesco de possibilidades ao mesmo tempo <span class="cite">[5]</span>.
+        </p>
+</section>
+
+<!-- 2. Bit x Qubit -->
+<section class="mb-5">
+        <h2 class="section-title">2. Bit e qubit</h2>
+        <p>
+             No computador comum, a menor unidade de informação é o <strong>bit</strong>. Um bit só
+            pode assumir dois valores: 0 ou 1. É como um interruptor de luz, que só pode estar
+            ligado ou desligado — nunca os dois ao mesmo tempo. Todo o processamento de um
+            computador comum, do jogo mais simples ao aplicativo mais complexo, é feito
+            combinando sequências enormes desses zeros e uns.
+        </p>
+        <p>
+           No computador quântico, a unidade de informação é o <strong>qubit</strong> (ou "bit
+           quântico"). A grande diferença é que o qubit pode ser 0, pode ser 1, ou pode estar em
+           uma combinação dos dois estados ao mesmo tempo. Esse fenômeno se chama
+           <strong>superposição</strong> <span class="cite">[2]</span>.
+        </p>
+        <p>
+            Uma forma simples de imaginar isso é pensar em uma moeda. O bit é como uma moeda
+            parada em cima da mesa, mostrando claramente cara ou coroa. Já o qubit é como essa
+            mesma moeda ainda girando no ar: enquanto ela está girando, não dá para dizer se é
+            cara ou coroa — ela está, de certa forma, nos dois estados ao mesmo tempo, até o
+            momento em que alguém a observa (ou seja, até o momento em que é medida)
+            <span class="cite">[7]</span>.
+        </p>
+</section>
+
+<!-- 3. Superposição e emaranhamento -->
+<section class="mb-5">
+        <h2 class="section-title">3. Superposição e emaranhamento</h2>
+        <p>
+          A <strong>superposição</strong> é o que permite o qubit estar em mais de um estado ao
+                mesmo tempo <span class="cite">[1]</span>. Isso pode parecer estranho, mas é justamente
+                isso que dá à computação quântica seu grande poder: quando se juntam vários qubits em
+                superposição, é possível representar muitas combinações diferentes ao mesmo tempo, e
+                não só uma de cada vez, como aconteceria em um computador comum. Por exemplo, dois
+                qubits em superposição conseguem representar, ao mesmo tempo, as quatro combinações
+                possíveis de 0 e 1 (00, 01, 10 e 11) <span class="cite">[4]</span>.
+        </p>
+        <p>
+                Outra ideia muito importante é o <strong>emaranhamento quântico</strong>. Quando dois
+                qubits ficam emaranhados, o estado de um deles passa a estar ligado ao estado do
+                outro, de um jeito que, ao medir um dos qubits, é possível saber instantaneamente algo
+                sobre o outro — mesmo que eles estejam fisicamente separados, em lugares diferentes
+                <span class="cite">[7]</span>.
+        </p>
+        <p>     É a junção entre superposição e emaranhamento que faz os computadores quânticos
+                conseguirem, em teoria, testar muitas soluções diferentes de um problema ao mesmo
+                tempo, em vez de testar uma solução por vez, como faz um computador comum
+                <span class="cite">[2]</span>.
+            </p>
+</section>
+
+<!-- 4. Desafios -->
+<section class="mb-5">
+        <h2 class="section-title">4. Por que é tão difícil de fazer?</h2>
+        <p>
+          Manter os qubits em superposição é uma tarefa bem complicada. Qualquer barulho,
+                vibração, variação de temperatura ou até uma pequena interferência do ambiente pode
+                fazer o qubit perder essa característica quântica. Esse fenômeno se chama
+                <strong>decoerência</strong>. É por isso que os computadores quânticos ficam dentro de
+                máquinas muito geladas, resfriadas a temperaturas próximas da mais baixa que existe no
+                universo <span class="cite">[1]</span>.
+        </p>
+        <p>
+             Além da decoerência, existe o problema dos erros. Como os qubits são muito sensíveis a
+                qualquer interferência, os cálculos feitos por um computador quântico ainda têm bastante
+                chance de erro. Por isso, cientistas trabalham em técnicas de correção de erros
+                quânticos, tentando tornar os resultados mais confiáveis.
+        </p>
+        <p>     
+            Outro ponto é a escala. Para fazer coisas realmente avançadas, como quebrar um tipo de
+                segurança digital muito usado hoje, chamado criptografia RSA de 2048 bits, seria
+                preciso um computador quântico com algo em torno de 20 milhões de qubits estáveis —
+                um número muito maior do que existe atualmente em qualquer computador quântico do
+                mundo <span class="cite">[6]</span>.
+            </p>
+</section>
+
+      <!-- 5. Aplicações -->
+        <section class="mb-5">
+            <h2 class="section-title">6. Para que a computação quântica pode servir?</h2>
+            <p>
+                Mesmo ainda em desenvolvimento, já existem várias áreas em que a computação quântica
+                pode fazer diferença no futuro:
+            </p>
+            <ul>
+                <li>
+                    <strong>Remédios e química:</strong> simular o comportamento de moléculas de forma
+                    muito mais precisa, ajudando a criar novos remédios e materiais mais rápido
+                    <span class="cite">[6]</span>.
+                </li>
+                <li>
+                    <strong>Logística e transporte:</strong> calcular rotas, horários e formas de
+                    organizar entregas de um jeito mais eficiente, algo bem útil para empresas grandes
+                    <span class="cite">[11]</span>.
+                </li>
+                <li>
+                    <strong>Segurança digital:</strong> tanto criar riscos para a segurança que usamos
+                    hoje quanto ajudar a criar uma nova forma de proteção, chamada criptografia
+                    pós-quântica, feita justamente para resistir a ataques de computadores quânticos
+                    <span class="cite">[10]</span>.
+                </li>
+                <li>
+                    <strong>Inteligência artificial:</strong> ajudar a treinar modelos de IA de forma
+                    mais rápida e analisar grandes quantidades de dados <span class="cite">[9]</span>.
+                </li>
+            </ul>
+        </section>
+
+        <!-- 6. Cenário atual -->
+        <section class="mb-5">
+            <h2 class="section-title">7. Como está isso hoje em dia</h2>
+            <p>
+                Hoje, não é preciso ter um computador quântico próprio para poder usar um. Empresas
+                como IBM, Google, Microsoft e Amazon já oferecem acesso a processadores quânticos pela
+                internet, em um modelo parecido com o que já conhecemos da computação em nuvem
+                <span class="cite">[8]</span>.
+            </p>
+            <p>
+                A IBM, por exemplo, tem lançado processadores quânticos cada vez mais avançados,
+                tentando tornar essa tecnologia mais estável e com menos erros, buscando o que os
+                cientistas chamam de "tolerância a falhas" <span class="cite">[9]</span>. Ao mesmo
+                tempo, cresce a preocupação com dados sigilosos guardados hoje sendo decifrados no
+                futuro, quando computadores quânticos suficientemente poderosos existirem — isso tem
+                levado empresas e governos a estudar a criptografia pós-quântica com mais atenção
+                <span class="cite">[8]</span>.
+            </p>
+        </section>
+
+        <!-- 7. Conclusão -->
+        <section class="mb-5">
+            <h2 class="section-title">8. Conclusão</h2>
+            <p>
+                A computação quântica ainda está em uma fase de desenvolvimento, mas já deixou de ser
+                apenas uma ideia de livro de física para se tornar um assunto de investimento real por
+                parte de grandes empresas e governos ao redor do mundo. Ela ainda tem desafios grandes
+                para resolver, como manter os qubits estáveis por tempo suficiente e diminuir os erros
+                nos cálculos.
+            </p>
+            <p class="mb-0">
+                Mesmo assim, o potencial dessa tecnologia é enorme: da criação de novos remédios até
+                uma segurança digital mais forte, passando pela inteligência artificial. Entender os
+                conceitos básicos desse assunto, como o qubit, a superposição e o emaranhamento, é um
+                bom primeiro passo para acompanhar as mudanças que essa tecnologia deve trazer nas
+                próximas décadas.
+            </p>
+        </section>
+
+    </div>
+
+    <footer class="footer-quantum text-center py-3">
+        <div class="container">
+            <p class="mb-0">
+                Veja a <a href="fontes.html">lista de fontes</a> usadas neste trabalho.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
