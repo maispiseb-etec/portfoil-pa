@@ -6,10 +6,10 @@ num = 0
 num2 = 0
 
 print("Digite o primeiro numero: ")
-num = int(input(num))
+num = int(input("num: "))
 
 print("Digite o segundo numero: ")
-num2 = int(input(num2))
+num2 = int(input("num2: "))
 
 if num > num2:
     print(f"o maior numero é {num}")
