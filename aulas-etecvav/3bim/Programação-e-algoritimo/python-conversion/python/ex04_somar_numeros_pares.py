@@ -1,3 +1,6 @@
+# Autor: Matheus F. Mation
+# Data: Agosto/2026
+# Descrição: Calcula a soma dos números pares de 1 até um número informado.
 numero = 0
 contador = 1
 soma = 0
