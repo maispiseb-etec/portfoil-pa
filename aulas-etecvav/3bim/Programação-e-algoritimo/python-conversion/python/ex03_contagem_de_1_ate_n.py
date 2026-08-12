@@ -1,6 +1,6 @@
-
-# Sebastian A. S. Diaz
-
+# Autor: Sebastian A. S. Diaz
+# Data: Agosto/2026 
+# Descrição: Lê um número inteiro positivo e exibe a contagem de 1 até esse número.
 numero = 0
 contador = 1
 
