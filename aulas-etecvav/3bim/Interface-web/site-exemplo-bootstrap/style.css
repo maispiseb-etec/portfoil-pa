@@ -1,0 +1,102 @@
+/* =========================================================
+   custom.css — personalizações por cima do Bootstrap 5
+   Boa prática do guia: nunca editar o bootstrap.min.css,
+   e sim sobrescrever em um arquivo próprio.
+   ========================================================= */
+
+   @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+   :root{
+     /* Sobrescreve as variáveis de cor do Bootstrap com a paleta da F1 */
+     --bs-primary: #e10600;      /* vermelho de corrida no lugar do azul padrão */
+     --bs-primary-rgb: 225, 6, 0;
+     --bs-dark: #0c0e10;
+     --bs-body-bg: #0c0e10;
+     --bs-body-color: #edeae1;
+     --bs-border-color: #2a2e33;
+     --bs-warning: #ffc400;      /* amarelo de boxes no lugar do amarelo padrão */
+   }
+   
+   body{
+     font-family: 'Inter', sans-serif;
+     background-image: repeating-linear-gradient(180deg, rgba(255,255,255,0.012) 0px, rgba(255,255,255,0.012) 1px, transparent 1px, transparent 3px);
+   }
+   
+   h1, h2, h3, h4, .navbar-brand, .btn{
+     font-family: 'Oswald', sans-serif;
+     text-transform: uppercase;
+     letter-spacing: 0.02em;
+   }
+   
+   /* Navbar mais "torre de cronometragem" */
+   .navbar{
+     background-color: rgba(12,14,16,0.9) !important;
+     border-bottom: 1px solid var(--bs-border-color);
+     backdrop-filter: blur(8px);
+   }
+   .navbar-brand .accent{ color: var(--bs-primary); }
+   .navbar .badge-season{
+     font-family: 'Inter', monospace;
+     font-size: 0.65rem;
+     border: 1px solid var(--bs-border-color);
+     color: #8b929c;
+   }
+   
+   /* Faixa de meio-fio no topo */
+   .curb-strip{
+     height: 6px;
+     background: repeating-linear-gradient(-45deg, var(--bs-primary) 0 22px, #edeae1 22px 44px);
+   }
+   
+   /* Cards com fundo carbono, para combinar com o tema escuro */
+   .card{
+     background-color: #16181b;
+     border-color: var(--bs-border-color);
+   }
+   .card-team{
+     border-left-width: 4px !important;
+   }
+   
+   /* Botão primário customizado (Bootstrap gera as variações a partir de --bs-primary,
+      mas o hover padrão escurece; aqui deixamos mais vivo, no espírito da marca) */
+   .btn-primary:hover, .btn-primary:focus{
+     background-color: #ff1a10;
+     border-color: #ff1a10;
+   }
+   
+   /* Números de telemetria monoespaçados */
+   .mono{ font-family: 'Inter', monospace; }
+   
+   /* Luzes de largada — elemento assinatura reaproveitado do site original */
+   .start-lights{
+     display: inline-flex;
+     gap: 14px;
+     padding: 14px 20px;
+     background: #16181b;
+     border: 1px solid var(--bs-border-color);
+     border-radius: 0.375rem;
+   }
+   .start-lights span{
+     width: 18px;
+     height: 18px;
+     border-radius: 50%;
+     background: #2a0503;
+     animation: bulb-seq 5s infinite;
+   }
+   .start-lights span:nth-child(1){ animation-delay: 0s; }
+   .start-lights span:nth-child(2){ animation-delay: .5s; }
+   .start-lights span:nth-child(3){ animation-delay: 1s; }
+   .start-lights span:nth-child(4){ animation-delay: 1.5s; }
+   .start-lights span:nth-child(5){ animation-delay: 2s; }
+   
+   @keyframes bulb-seq{
+     0%   { background: #2a0503; }
+     10%  { background: var(--bs-primary); box-shadow: 0 0 14px var(--bs-primary); }
+     60%  { background: var(--bs-primary); box-shadow: 0 0 14px var(--bs-primary); }
+     62%  { background: #2a0503; box-shadow: none; }
+     100% { background: #2a0503; box-shadow: none; }
+   }
+   
+   @media (prefers-reduced-motion: reduce){
+     .start-lights span{ animation: none; background: var(--bs-primary); }
+   }
