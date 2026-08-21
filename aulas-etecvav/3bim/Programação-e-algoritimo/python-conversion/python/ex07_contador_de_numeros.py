@@ -1,6 +1,6 @@
 # Autor: Matheus F. Mation
 # Data: Agosto/2026 
-# Descrição: Calcula a média de notas válidas entre 0 e 10 usando while.
+# Descrição: Lê 10 números e conta quantos são positivos, negativos e zeros.
 
 numero = 0
 contador = 1
@@ -9,14 +9,18 @@ negativos = 0
 zeros = 0
 
 while contador <= 10:
-    print(f"Digite o {contador}o numero")
+    print(f"Digite o {contador}° numero")
     numero = int(input("numero:"))
     if numero > 0:
         positivos += 1
-        
+    
     elif numero < 0:
         negativos += 1     
 
     else:
         zeros += 1
     contador += 1
+
+print(f"Positivos: {positivos}")
+print(f"Negativos: {negativos}")
+print(f"Zeros: {zeros}")
