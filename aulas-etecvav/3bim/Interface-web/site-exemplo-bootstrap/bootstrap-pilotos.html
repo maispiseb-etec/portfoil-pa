@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pilotos — GRID/26 (Bootstrap)</title>
+<meta name="description" content="Os 22 pilotos da temporada 2026 de Fórmula 1, agrupados por equipe, montados com Bootstrap 5.">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body data-bs-theme="dark">
+
+<div class="curb-strip"></div>
+
+<nav class="navbar navbar-expand-lg sticky-top py-3">
+  <div class="container">
+    <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+      GRID<span class="accent">/</span>26
+      <span class="badge-season badge rounded-1 fw-normal">TEMP. 2026</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="bootstrap-times.html">Times</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="bootstrap-pilotos.html">Pilotos</a></li>
+        <li class="nav-item"><a class="nav-link" href="bootstrap-gps.html">GPs</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <header class="py-5 border-bottom border-secondary-subtle">
+    <div class="container">
+      <p class="mono text-warning small mb-3">
+        <i class="bi bi-person-badge-fill text-danger"></i>
+        22 PILOTOS · 14 NACIONALIDADES DIFERENTES
+      </p>
+      <h1 class="display-5 fw-bold mb-3">Os pilotos da temporada 2026</h1>
+      <p class="lead text-body-secondary mb-0" style="max-width:60ch;">
+        Do bicampeão Max Verstappen ao estreante Arvid Lindblad, o grid de 2026 reúne
+        veteranos e novatos. Agrupados por equipe, na mesma ordem da página de Times.
+      </p>
+    </div>
+  </header>
+
+  <section class="py-5">
+    <div class="container">
+
+      <!-- Mercedes -->
+      <div class="mb-5">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span class="d-inline-block" style="width:14px;height:14px;background:#00A19B;"></span>
+          <h3 class="h5 mb-0 text-uppercase">Mercedes</h3>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 g-3">
+          <div class="col">
+            <div class="card h-100"><div class="card-body d-flex align-items-center gap-3">
+              <span class="mono fw-bold fs-3" style="color:#00A19B;">63</span>
+              <div><p class="mb-0 fw-semibold">George Russell</p><p class="mb-0 text-body-secondary small mono">🇬🇧 Reino Unido</p></div>
+            </div></div>
+          </div>
+          <div class="col">
+            <div class="card h-100"><div class="card-body d-flex align-items-center gap-3">
+              <span class="mono fw-bold fs-3" style="color:#00A19B;">12</span>
+              <div><p class="mb-0 fw-semibold">Kimi Antonelli</p><p class="mb-0 text-body-secondary small mono">🇮🇹 Itália</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ferrari -->
+      <div class="mb-5">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span class="d-inline-block" style="width:14px;height:14px;background:#DC0000;"></span>
+          <h3 class="h5 mb-0 text-uppercase">Ferrari</h3>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 g-3">
+          <div class="col">
+            <div class="card h-100"><div class="card-body d-flex align-items-center gap-3">
+              <span class="mono fw-bold fs-3 text-danger">16</span>
+              <div><p class="mb-0 fw-semibold">Charles Leclerc</p><p class="mb-0 text-body-secondary small mono">🇲🇨 Mônaco</p></div>
+            </div></div>
+          </div>
+          <div class="col">
+            <div class="card h-100"><div class="card-body d-flex align-items-center gap-3">
+              <span class="mono fw-bold fs-3 text-danger">44</span>
+              <div><p class="mb-0 fw-semibold">Lewis Hamilton</p><p class="mb-0 text-body-secondary small mono">🇬🇧 Reino Unido</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- McLaren -->
+      <div class="mb-5">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span class="d-inline-block" style="width:14px;height:14px;background:#FF8000;"></span>
+          <h3 class="h5 mb-0 text-uppercase">McLaren</h3>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 g-3">
+          <div class="col">
+            <div class="card h-100"><div class="card-body d-flex align-items-center gap-3">
+              <span class="mono fw-bold fs-3" style="color:#FF8000;">1</span>
+              <div><p class="mb-0 fw-semibold">Lando Norris</p><p class="mb-0 text-body-secondary small mono">🇬🇧 Reino Unido</p></div>
+            </div></div>
+          </div>
+          <div class="col">
+            <div class="card h-100"><div class="card-body d-flex align-items-center gap-3">
+              <span class="mono fw-bold fs-3" style="color:#FF8000;">81</span>
+              <div><p class="mb-0 fw-semibold">Oscar Piastri</p><p class="mb-0 text-body-secondary small mono">🇦🇺 Austrália</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Red Bull -->
+      <div class="mb-5">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span class="d-inline-block" style="width:14px;height:14px;background:#1E41FF;"></span>
+          <h3 class="h5 mb-0 text-uppercase">Red Bull</h3>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 g-3">
+          <div class="col">
+            <div class="card h-100"><div class="card-body d-flex align-items-center gap-3">
+              <span class="mono fw-bold fs-3 text-primary">3</span>
+              <div><p class="mb-0 fw-semibold">Max Verstappen</p><p class="mb-0 text-body-secondary small mono">🇳🇱 Países Baixos</p></div>
+            </div></div>
+          </div>
+          <div class="col">
+            <div class="card h-100"><div class="card-body d-flex align-items-center gap-3">
+              <span class="mono fw-bold fs-3 text-primary">6</span>
+              <div><p class="mb-0 fw-semibold">Isack Hadjar</p><p class="mb-0 text-body-secondary small mono">🇫🇷 França</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Racing Bulls -->
+      <div class="mb-5">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span class="d-inline-block" style="width:14px;height:14px;background:#1660AD;"></span>
+          <h3 class="h5 mb-0 text-uppercase">Racing Bulls</h3>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 g-3">
+          <div class="col">
+            <div class="card h-100"><div class="card-body d-flex align-items-center gap-3">
+              <span class="mono fw-bold fs-3" style="color:#1660AD;">30</span>
+              <div><p class="mb-0 fw-semibold">Liam Lawson</p><p class="mb-0 text-body-secondary small mono">🇳🇿 Nova Zelândia</p></div>
+            </div></div>
+          </div>
+          <div class="col">
+            <div class="card h-100"><div class="card-body d-flex align-items-center gap-3">
+              <span class="mono fw-bold fs-3" style="color:#1660AD;">41</span>
+              <div><p class="mb-0 fw-semibold">Arvid Lindblad</p><p class="mb-0 text-body-secondary small mono">🇬🇧 Reino Unido · estreante</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Alpine -->
+      <div class="mb-5">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span class="d-inline-block" style="width:14px;height:14px;background:#00A1E8;"></span>
+          <h3 class="h5 mb-0 text-uppercase">Alpine</h3>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 g-3">
+          <div class="col">
+            <div class="card h-100"><div class="card-body d-flex align-items-center gap-3">
+              <span class="mono fw-bold fs-3" style="color:#00A1E8;">10</span>
+              <div><p class="mb-0 fw-semibold">Pierre Gasly</p><p class="mb-0 text-body-secondary small mono">🇫🇷 França</p></div>
+            </div></div>
+          </div>
+          <div class="col">
+            <div class="card h-100"><div class="card-body d-flex align-items-center gap-3">
+              <span class="mono fw-bold fs-3" style="color:#00A1E8;">43</span>
+              <div><p class="mb-0 fw-semibold">Franco Colapinto</p><p class="mb-0 text-body-secondary small mono">🇦🇷 Argentina</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Audi -->
+      <div class="mb-5">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span class="d-inline-block" style="width:14px;height:14px;background:#B0B4BA;"></span>
+          <h3 class="h5 mb-0 text-uppercase">Audi</h3>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 g-3">
+          <div class="col">
+            <div class="card h-100"><div class="card-body d-flex align-items-center gap-3">
+              <span class="mono fw-bold fs-3 text-secondary">27</span>
+              <div><p class="mb-0 fw-semibold">Nico Hülkenberg</p><p class="mb-0 text-body-secondary small mono">🇩🇪 Alemanha</p></div>
+            </div></div>
+          </div>
+          <div class="col">
+            <div class="card h-100"><div class="card-body d-flex align-items-center gap-3">
+              <span class="mono fw-bold fs-3 text-secondary">5</span>
+              <div><p class="mb-0 fw-semibold">Gabriel Bortoleto</p><p class="mb-0 text-body-secondary small mono">🇧🇷 Brasil</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Williams -->
+      <div class="mb-5">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span class="d-inline-block" style="width:14px;height:14px;background:#00A3E0;"></span>
+          <h3 class="h5 mb-0 text-uppercase">Williams</h3>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 g-3">
+          <div class="col">
+            <div class="card h-100"><div class="card-body d-flex align-items-center gap-3">
+              <span class="mono fw-bold fs-3" style="color:#00A3E0;">55</span>
+              <div><p class="mb-0 fw-semibold">Carlos Sainz</p><p class="mb-0 text-body-secondary small mono">🇪🇸 Espanha</p></div>
+            </div></div>
+          </div>
+          <div class="col">
+            <div class="card h-100"><div class="card-body d-flex align-items-center gap-3">
+              <span class="mono fw-bold fs-3" style="color:#00A3E0;">23</span>
+              <div><p class="mb-0 fw-semibold">Alexander Albon</p><p class="mb-0 text-body-secondary small mono">🇹🇭 Tailândia</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Aston Martin -->
+      <div class="mb-5">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span class="d-inline-block" style="width:14px;height:14px;background:#00352F;"></span>
+          <h3 class="h5 mb-0 text-uppercase">Aston Martin</h3>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 g-3">
+          <div class="col">
+            <div class="card h-100"><div class="card-body d-flex align-items-center gap-3">
+              <span class="mono fw-bold fs-3" style="color:#1a7d6f;">14</span>
+              <div><p class="mb-0 fw-semibold">Fernando Alonso</p><p class="mb-0 text-body-secondary small mono">🇪🇸 Espanha</p></div>
+            </div></div>
+          </div>
+          <div class="col">
+            <div class="card h-100"><div class="card-body d-flex align-items-center gap-3">
+              <span class="mono fw-bold fs-3" style="color:#1a7d6f;">18</span>
+              <div><p class="mb-0 fw-semibold">Lance Stroll</p><p class="mb-0 text-body-secondary small mono">🇨🇦 Canadá</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cadillac -->
+      <div class="mb-5">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span class="d-inline-block" style="width:14px;height:14px;background:#C9A227;"></span>
+          <h3 class="h5 mb-0 text-uppercase">Cadillac</h3>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 g-3">
+          <div class="col">
+            <div class="card h-100"><div class="card-body d-flex align-items-center gap-3">
+              <span class="mono fw-bold fs-3 text-warning">11</span>
+              <div><p class="mb-0 fw-semibold">Sergio Pérez</p><p class="mb-0 text-body-secondary small mono">🇲🇽 México</p></div>
+            </div></div>
+          </div>
+          <div class="col">
+            <div class="card h-100"><div class="card-body d-flex align-items-center gap-3">
+              <span class="mono fw-bold fs-3 text-warning">77</span>
+              <div><p class="mb-0 fw-semibold">Valtteri Bottas</p><p class="mb-0 text-body-secondary small mono">🇫🇮 Finlândia</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Haas -->
+      <div class="mb-4">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span class="d-inline-block" style="width:14px;height:14px;background:#B6BABD;"></span>
+          <h3 class="h5 mb-0 text-uppercase">Haas</h3>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 g-3">
+          <div class="col">
+            <div class="card h-100"><div class="card-body d-flex align-items-center gap-3">
+              <span class="mono fw-bold fs-3" style="color:#B6BABD;">31</span>
+              <div><p class="mb-0 fw-semibold">Esteban Ocon</p><p class="mb-0 text-body-secondary small mono">🇫🇷 França</p></div>
+            </div></div>
+          </div>
+          <div class="col">
+            <div class="card h-100"><div class="card-body d-flex align-items-center gap-3">
+              <span class="mono fw-bold fs-3" style="color:#B6BABD;">87</span>
+              <div><p class="mb-0 fw-semibold">Oliver Bearman</p><p class="mb-0 text-body-secondary small mono">🇬🇧 Reino Unido</p></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="border-top border-secondary-subtle py-4 mt-4">
+  <div class="container d-flex justify-content-between align-items-center flex-wrap gap-3">
+    <p class="mono small text-body-secondary mb-0">GRID/26 — exemplo com Bootstrap 5. Guia não oficial da F1.</p>
+    <div class="d-flex gap-3 mono small">
+      <a href="index.html" class="link-light link-opacity-75">Início</a>
+      <a href="bootstrap-times.html" class="link-light link-opacity-75">Times</a>
+      <a href="bootstrap-pilotos.html" class="link-light link-opacity-75">Pilotos</a>
+      <a href="bootstrap-gps.html" class="link-light link-opacity-75">GPs</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

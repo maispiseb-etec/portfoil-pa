@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GPs — GRID/26 (Bootstrap)</title>
+<meta name="description" content="Calendário completo da temporada 2026 de Fórmula 1, montado com Bootstrap 5: tabela responsiva com todas as 23 corridas.">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body data-bs-theme="dark">
+
+<div class="curb-strip"></div>
+
+<nav class="navbar navbar-expand-lg sticky-top py-3">
+  <div class="container">
+    <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+      GRID<span class="accent">/</span>26
+      <span class="badge-season badge rounded-1 fw-normal">TEMP. 2026</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="bootstrap-times.html">Times</a></li>
+        <li class="nav-item"><a class="nav-link" href="bootstrap-pilotos.html">Pilotos</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="bootstrap-gps.html">GPs</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <header class="py-5 border-bottom border-secondary-subtle">
+    <div class="container">
+      <p class="mono text-warning small mb-3">
+        <i class="bi bi-calendar-event-fill text-danger"></i>
+        23 CORRIDAS · 5 CONTINENTES · MARÇO A DEZEMBRO
+      </p>
+      <h1 class="display-5 fw-bold mb-3">O calendário da temporada 2026</h1>
+      <p class="lead text-body-secondary mb-0" style="max-width:60ch;">
+        A temporada abre em Melbourne no dia 8 de março e termina em Abu Dhabi no dia 6
+        de dezembro. São 5 fins de semana sprint e a estreia do novo circuito de rua de
+        Madri.
+      </p>
+    </div>
+  </header>
+
+  <div class="container mt-5">
+    <div class="alert alert-secondary d-flex align-items-start gap-3" role="alert">
+      <i class="bi bi-info-circle-fill fs-5"></i>
+      <div>
+        <strong>Sobre o calendário:</strong> a etapa da Arábia Saudita foi cancelada por
+        força maior devido ao conflito no Oriente Médio, e o GP do Bahrein foi
+        remanejado para o circuito de Sepang, na Malásia, mantendo a etapa no
+        calendário. Datas sujeitas a confirmação oficial da FIA.
+      </div>
+    </div>
+  </div>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end border-bottom border-secondary-subtle pb-3 mb-4 flex-wrap gap-2">
+        <h2 class="h3 mb-0">Todas as etapas</h2>
+        <div class="btn-group" role="group" aria-label="Filtrar corridas">
+          <button type="button" class="btn btn-outline-light btn-sm active" data-filter="all">Todas</button>
+          <button type="button" class="btn btn-outline-light btn-sm" data-filter="sprint">Só sprints</button>
+        </div>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-dark table-hover align-middle" id="raceTable">
+          <thead>
+            <tr class="mono small text-uppercase text-body-secondary">
+              <th>Round</th>
+              <th></th>
+              <th>GP</th>
+              <th>Circuito</th>
+              <th>Data</th>
+              <th>Formato</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-sprint="0"><td class="mono">01</td><td>🇦🇺</td><td>GP da Austrália</td><td class="text-body-secondary">Albert Park, Melbourne</td><td class="mono">8 mar 2026</td><td></td></tr>
+            <tr data-sprint="1"><td class="mono">02</td><td>🇨🇳</td><td>GP da China</td><td class="text-body-secondary">Shanghai International</td><td class="mono">15 mar 2026</td><td><span class="badge text-bg-success">Sprint</span></td></tr>
+            <tr data-sprint="0"><td class="mono">03</td><td>🇯🇵</td><td>GP do Japão</td><td class="text-body-secondary">Suzuka Circuit</td><td class="mono">29 mar 2026</td><td></td></tr>
+            <tr data-sprint="1"><td class="mono">04</td><td>🇺🇸</td><td>GP de Miami</td><td class="text-body-secondary">Hard Rock Stadium</td><td class="mono">3 mai 2026</td><td><span class="badge text-bg-success">Sprint</span></td></tr>
+            <tr data-sprint="1"><td class="mono">05</td><td>🇨🇦</td><td>GP do Canadá</td><td class="text-body-secondary">Circuit Gilles Villeneuve, Montreal</td><td class="mono">24 mai 2026</td><td><span class="badge text-bg-success">Sprint</span></td></tr>
+            <tr data-sprint="0"><td class="mono">06</td><td>🇲🇨</td><td>GP de Mônaco</td><td class="text-body-secondary">Circuit de Monaco</td><td class="mono">7 jun 2026</td><td></td></tr>
+            <tr data-sprint="0"><td class="mono">07</td><td>🇪🇸</td><td>GP de Barcelona-Catalunha</td><td class="text-body-secondary">Circuit de Barcelona-Catalunya</td><td class="mono">14 jun 2026</td><td></td></tr>
+            <tr data-sprint="0"><td class="mono">08</td><td>🇦🇹</td><td>GP da Áustria</td><td class="text-body-secondary">Red Bull Ring</td><td class="mono">28 jun 2026</td><td></td></tr>
+            <tr data-sprint="1"><td class="mono">09</td><td>🇬🇧</td><td>GP da Inglaterra</td><td class="text-body-secondary">Silverstone Circuit</td><td class="mono">5 jul 2026</td><td><span class="badge text-bg-success">Sprint</span></td></tr>
+            <tr data-sprint="0"><td class="mono">10</td><td>🇧🇪</td><td>GP da Bélgica</td><td class="text-body-secondary">Spa-Francorchamps</td><td class="mono">19 jul 2026</td><td></td></tr>
+            <tr data-sprint="0"><td class="mono">11</td><td>🇭🇺</td><td>GP da Hungria</td><td class="text-body-secondary">Hungaroring</td><td class="mono">26 jul 2026</td><td></td></tr>
+            <tr data-sprint="1"><td class="mono">12</td><td>🇳🇱</td><td>GP da Holanda</td><td class="text-body-secondary">Circuit Zandvoort</td><td class="mono">23 ago 2026</td><td><span class="badge text-bg-success">Sprint</span></td></tr>
+            <tr data-sprint="0"><td class="mono">13</td><td>🇮🇹</td><td>GP da Itália</td><td class="text-body-secondary">Autodromo Nazionale di Monza</td><td class="mono">6 set 2026</td><td></td></tr>
+            <tr data-sprint="0"><td class="mono">14</td><td>🇪🇸</td><td>GP da Espanha</td><td class="text-body-secondary">Madring, Madrid <span class="badge text-bg-warning text-dark ms-1">Novo</span></td><td class="mono">13 set 2026</td><td></td></tr>
+            <tr data-sprint="0"><td class="mono">15</td><td>🇦🇿</td><td>GP do Azerbaijão</td><td class="text-body-secondary">Baku City Circuit</td><td class="mono">26 set 2026</td><td></td></tr>
+            <tr data-sprint="0"><td class="mono">16</td><td>🇧🇭</td><td>GP do Bahrein</td><td class="text-body-secondary">Sepang International, Malásia</td><td class="mono">4 out 2026</td><td></td></tr>
+            <tr data-sprint="0"><td class="mono">17</td><td>🇸🇬</td><td>GP de Singapura</td><td class="text-body-secondary">Marina Bay Street Circuit</td><td class="mono">11 out 2026</td><td></td></tr>
+            <tr data-sprint="0"><td class="mono">18</td><td>🇺🇸</td><td>GP dos Estados Unidos</td><td class="text-body-secondary">Circuit of The Americas, Austin</td><td class="mono">25 out 2026</td><td></td></tr>
+            <tr data-sprint="0"><td class="mono">19</td><td>🇲🇽</td><td>GP do México</td><td class="text-body-secondary">Autódromo Hermanos Rodríguez</td><td class="mono">1 nov 2026</td><td></td></tr>
+            <tr data-sprint="0"><td class="mono">20</td><td>🇧🇷</td><td>GP do Brasil</td><td class="text-body-secondary">Autódromo José Carlos Pace, Interlagos</td><td class="mono">8 nov 2026</td><td></td></tr>
+            <tr data-sprint="0"><td class="mono">21</td><td>🇺🇸</td><td>GP de Las Vegas</td><td class="text-body-secondary">Las Vegas Strip Circuit</td><td class="mono">22 nov 2026</td><td></td></tr>
+            <tr data-sprint="0"><td class="mono">22</td><td>🇶🇦</td><td>GP do Catar</td><td class="text-body-secondary">Lusail International Circuit</td><td class="mono">29 nov 2026</td><td></td></tr>
+            <tr data-sprint="0"><td class="mono">23</td><td>🇦🇪</td><td>GP de Abu Dhabi</td><td class="text-body-secondary">Yas Marina Circuit</td><td class="mono">6 dez 2026</td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <a href="index.html" class="btn btn-outline-warning mt-2">
+        <i class="bi bi-arrow-up-circle me-2"></i>Voltar ao início
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="border-top border-secondary-subtle py-4 mt-4">
+  <div class="container d-flex justify-content-between align-items-center flex-wrap gap-3">
+    <p class="mono small text-body-secondary mb-0">GRID/26 — exemplo com Bootstrap 5. Guia não oficial da F1.</p>
+    <div class="d-flex gap-3 mono small">
+      <a href="index.html" class="link-light link-opacity-75">Início</a>
+      <a href="bootstrap-times.html" class="link-light link-opacity-75">Times</a>
+      <a href="bootstrap-pilotos.html" class="link-light link-opacity-75">Pilotos</a>
+      <a href="bootstrap-gps.html" class="link-light link-opacity-75">GPs</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Filtro simples: mostra só as linhas sprint quando o botão é clicado
+  const buttons = document.querySelectorAll('[data-filter]');
+  const rows = document.querySelectorAll('#raceTable tbody tr');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.getAttribute('data-filter');
+      rows.forEach(row => {
+        const show = filter === 'all' || row.getAttribute('data-sprint') === '1';
+        row.classList.toggle('d-none', !show);
+      });
+    });
+  });
+</script>
+</body>
+</html>
