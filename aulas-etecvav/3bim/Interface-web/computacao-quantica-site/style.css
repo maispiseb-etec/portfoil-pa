@@ -4,8 +4,7 @@
    Trabalho acadêmico — complementa o Bootstrap 5.3.7
    Paleta inspirada em computação quântica: tons de azul
    profundo (espaço/laboratório), ciano (qubit/laser) e
-   roxo/magenta (energia quântica). Sem degradês — cores
-   sólidas.
+   roxo/magenta (energia quântica). 
    ========================================================= */
 
 :root {
@@ -13,7 +12,7 @@
     --quantum-blue: #1a2a6c;     /* azul profundo */
     --quantum-accent: #00d9ff;   /* ciano - "laser" de qubit */
     --quantum-purple: #7b2ff7;   /* roxo - energia quântica */
-    --quantum-magenta: #d6249f;  /* magenta - emaranhamento */
+    --quantum-magenta: #d6249f;  /* magenta */
     --quantum-green: #00e0a4;    /* verde-água - estado quântico */
     --quantum-light: #eef2ff;    /* fundo claro do conteúdo */
 }

@@ -14,10 +14,10 @@
 
 <div class="curb-strip"></div>
 
-<!-- ===== NAVBAR ===== -->
+<!-- NAVBAR-->
 <nav class="navbar navbar-expand-lg sticky-top py-3">
   <div class="container">
-    <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="bootstrap-inicio.html">
+    <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
       GRID<span class="accent">/</span>26
       <span class="badge-season badge rounded-1 fw-normal">TEMP. 2026</span>
     </a>
@@ -30,6 +30,11 @@
         <li class="nav-item"><a class="nav-link" href="bootstrap-times.html">Times</a></li>
         <li class="nav-item"><a class="nav-link" href="bootstrap-pilotos.html">Pilotos</a></li>
         <li class="nav-item"><a class="nav-link" href="bootstrap-gps.html">GPs</a></li>
+        <li class="nav-item">
+    <a class="nav-link" href="uso-ia.html">
+        <i class="bi bi-robot me-1"></i>Uso de IA
+    </a>
+</li>
       </ul>
     </div>
   </div>
@@ -37,7 +42,7 @@
 
 <main>
 
-  <!-- ===== HERO ===== -->
+  <!-- HERO -->
   <header class="py-5 border-bottom border-secondary-subtle">
     <div class="container py-4">
       <div class="row align-items-center g-5">
@@ -47,7 +52,7 @@
             TEMPORADA 2026 · 77ª EDIÇÃO DO CAMPEONATO
           </p>
           <h1 class="display-4 fw-bold mb-3">
-            Bem-vindo aos <span class="accent">boxes</span>.
+            Bem-vindo ao site de <span class="accent">F1</span>
           </h1>
           <p class="lead text-body-secondary mb-4">
             O GRID/26 é o guia rápido para a temporada 2026 de Fórmula 1: quem está
@@ -62,6 +67,10 @@
             <a href="bootstrap-gps.html" class="btn btn-outline-light btn-lg px-4">Ver o calendário</a>
           </div>
         </div>
+         <!-- Coluna da imagem -->
+  <div class="col-12 col-lg-5 text-center">
+    <img src="chatgptimg.png" alt="Carro de Fórmula 1 na pista" class="img-fluid rounded">
+  </div>
       
 
           </div>
@@ -89,7 +98,7 @@
     </div>
   </header>
 
-  <!-- ===== ALERTA — novidade da temporada ===== -->
+  <!--ALERTA — novidade da temporada -->
   <div class="container mt-5">
     <div class="alert alert-warning d-flex align-items-start gap-3" role="alert">
       <i class="bi bi-stars fs-4"></i>
@@ -101,7 +110,7 @@
     </div>
   </div>
 
-  <!-- ===== NAVEGAÇÃO — 3 cards para as outras páginas ===== -->
+  <!-- NAVEGAÇÃO — 3 cards para as outras páginas -->
   <section class="py-5">
     <div class="container">
       <div class="d-flex justify-content-between align-items-end border-bottom border-secondary-subtle pb-3 mb-4 flex-wrap gap-2">
@@ -148,6 +157,36 @@
         </div>
       </div>
     </div>
+    <div class="row mt-5">
+    <div class="col-12">
+        <div class="card border-danger-subtle shadow-sm">
+            <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                    <i class="bi bi-robot fs-2 text-danger me-3"></i>
+                    <div>
+                        <h3 class="card-title mb-1">Uso de Inteligência Artificial</h3>
+                        <p class="text-body-secondary mb-0">
+                            Este projeto foi desenvolvido com apoio de Inteligência Artificial,
+                            seguindo a política de uso da disciplina.
+                        </p>
+                    </div>
+                </div>
+
+                <p>
+                    A IA foi utilizada como ferramenta de apoio durante o desenvolvimento,
+                    auxiliando na organização do código, revisão, esclarecimento de dúvidas
+                    sobre Bootstrap e estruturação das páginas. Todo o conteúdo foi revisado,
+                    compreendido e validado pelos autores do projeto.
+                </p>
+
+                <a href="uso-ia.html" class="btn btn-outline-danger">
+                    <i class="bi bi-file-earmark-text"></i>
+                    Ler a declaração completa
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
   </section>
 
 </main>
@@ -155,12 +194,22 @@
 <footer class="border-top border-secondary-subtle py-4 mt-4">
   <div class="container d-flex justify-content-between align-items-center flex-wrap gap-3">
     <p class="mono small text-body-secondary mb-0">GRID/26 — exemplo com Bootstrap 5. Guia não oficial da F1.</p>
-    <div class="d-flex gap-3 mono small">
+    <div class="d-flex gap-3 mono small flex-wrap"></div>
       <a href="index.html" class="link-light link-opacity-75">Início</a>
       <a href="bootstrap-times.html" class="link-light link-opacity-75">Times</a>
       <a href="bootstrap-pilotos.html" class="link-light link-opacity-75">Pilotos</a>
       <a href="bootstrap-gps.html" class="link-light link-opacity-75">GPs</a>
+      <a href="uso-ia.html" class="link-light link-opacity-75">
+    Uso de IA
+</a>
     </div>
+    <div class="w-100"></div>
+
+<p class="small text-body-secondary mt-3 mb-0">
+    Este projeto utilizou o ChatGPT (OpenAI) como ferramenta de apoio ao
+    desenvolvimento, conforme a política de uso de Inteligência Artificial
+    adotada na disciplina.
+</p>
   </div>
 </footer>
 
