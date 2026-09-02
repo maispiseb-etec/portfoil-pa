@@ -31,5 +31,8 @@ update funcionarios set salario = 7000 where idfuncionario = 1;<br/>
 update funcionarios set setor = 'Gestao de Pessoas' where setor = 'RH';<br/>
 <img src="imagens/realocar.png" alt="Exemplo" width="700" />
 ## Etapa 7 - Mudar estado e cidade
-update funcionarios set cidade = 'Florianopolis', estado = 'SC' where idfuncionario = 7;
-
+update funcionarios set cidade = 'Florianopolis', estado = 'SC' where idfuncionario = 7;<br/>
+<img src="imagens/cidade.png" alt="Exemplo" width="700" />
+## Etapa 8 - Excluir dados do funcionário
+delete from funcionarios where idfuncionario = 6;<br/>
+<img src="imagens/demitir.png" alt="Exemplo" width="700" />
