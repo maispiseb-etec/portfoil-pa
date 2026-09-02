@@ -36,3 +36,6 @@ update funcionarios set cidade = 'Florianopolis', estado = 'SC' where idfunciona
 ## Etapa 8 - Excluir dados do funcionário
 delete from funcionarios where idfuncionario = 6;<br/>
 <img src="imagens/demitir.png" alt="Exemplo" width="700" />
+## Etapa 9 - Encerrou atividades no estado RS.
+delete from funcionarios where estado = 'RS';<br/>
+neste caso a tabela não muda pois o único funcionário que morava em RS se mudou 
