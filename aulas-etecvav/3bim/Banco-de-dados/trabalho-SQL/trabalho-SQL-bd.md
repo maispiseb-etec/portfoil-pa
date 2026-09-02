@@ -27,3 +27,9 @@ values<br/>
 ## Etapa 5 - Aumentar salario da Ana
 update funcionarios set salario = 7000 where idfuncionario = 1;<br/>
 <img src="imagens/salario-ana.png" alt="Exemplo" width="700" />
+## Etapa 6 - Realocar funcionários do RH
+update funcionarios set setor = 'Gestao de Pessoas' where setor = 'RH';<br/>
+<img src="imagens/realocar.png" alt="Exemplo" width="700" />
+## Etapa 7 - Mudar estado e cidade
+update funcionarios set cidade = 'Florianopolis', estado = 'SC' where idfuncionario = 7;
+
