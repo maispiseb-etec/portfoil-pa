@@ -38,4 +38,5 @@ delete from funcionarios where idfuncionario = 6;<br/>
 <img src="imagens/demitir.png" alt="Exemplo" width="700" />
 ## Etapa 9 - Encerrou atividades no estado RS.
 delete from funcionarios where estado = 'RS';<br/>
-neste caso a tabela não muda pois o único funcionário que morava em RS se mudou 
+Neste caso a tabela não muda pois o único funcionário que morava em RS se mudou 
+<img src="imagens/0linhas.png" alt="Exemplo" width="700" />
