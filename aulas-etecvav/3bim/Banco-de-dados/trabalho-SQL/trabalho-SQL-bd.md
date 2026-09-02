@@ -11,6 +11,7 @@ cidade varchar (100) not null,<br/>
 estado char (2) not null,<br/>
 setor varchar (80) not null,<br/>
 salario decimal(10,2) not null);<br/>
+<img src="imagens/criar-tabela.png" alt="Exemplo" width="700" />
 ## Etapa 4 - Cadastrar funcionários 
 select * from funcionarios<br/>
 	insert into funcionarios values (1,'Ana Souza', 'ana@infonet.com', 'Sao Paulo', 'SP', 'TI', 5200.00);<br/>
@@ -22,3 +23,7 @@ values<br/>
 (5,'Juliana Matos', 'juliana@infonet.com', 'Curitiba', 'PR', 'Comercial', 2900.00),<br/>
 (6,'Marcos Pereira', 'marcos@infonet.com', 'Sao Paulo', 'SP', 'RH', 3200.00),<br/>
 (7,'Patricia Nunes', 'patricia@infonet.com', 'Porto Alegre', 'RS', 'Financeiro', 4100.00);<br/>
+<img src="imagens/tabela-funcionarios.png" alt="Exemplo" width="700" />
+## Etapa 5 - Aumentar salario da Ana
+update funcionarios set salario = 7000 where idfuncionario = 1;<br/>
+<img src="imagens/salario-ana.png" alt="Exemplo" width="700" />
