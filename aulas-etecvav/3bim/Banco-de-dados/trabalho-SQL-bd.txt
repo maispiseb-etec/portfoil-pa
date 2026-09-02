@@ -1,11 +1,14 @@
-##CREATE DATABASE bd_infonet##
+CREATE DATABASE bd_infonet
 use bd_infonet
 
-CREATE TABLE funcionario(
-	ID_funcionario INT not null primary key identity,
-	NOME CHAR(100) not null,	
-	email char (150) not null,
-	cidade char (100) not null,
-	estado nchar (2) not null,
-	setor char (80) not null,
-	salario decimal(5,2) not null,
+	CREATE TABLE funcionarios(
+	idfuncionario INT IDENTITY(1,1) PRIMARY KEY,
+	NOME varCHAR(100) not null,	
+	email varchar (150) not null UNIQUE,
+	cidade varchar (100) not null,
+	estado char (2) not null,
+	setor varchar (80) not null,
+	salario decimal(10,2) not null);
+
+
+	select * from funcionarios
