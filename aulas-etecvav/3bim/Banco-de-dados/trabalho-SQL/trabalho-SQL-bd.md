@@ -26,4 +26,4 @@ values<br/>
 <img src="imagens/tabela-funcionarios.png" alt="Exemplo" width="700" />
 ## Etapa 5 - Aumentar salario da Ana
 update funcionarios set salario = 7000 where idfuncionario = 1;<br/>
-<img src="imagens/salari-ana.png" alt="Exemplo" width="700" />
+<img src="imagens/salario-ana.png" alt="Exemplo" width="700" />
