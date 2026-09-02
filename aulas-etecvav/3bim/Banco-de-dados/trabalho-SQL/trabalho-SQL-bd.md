@@ -36,7 +36,16 @@ update funcionarios set cidade = 'Florianopolis', estado = 'SC' where idfunciona
 ## Etapa 8 - Excluir dados do funcionário
 delete from funcionarios where idfuncionario = 6;<br/>
 <img src="imagens/demitir.png" alt="Exemplo" width="700" />
-## Etapa 9 - Encerrou atividades no estado RS.
+## Etapa 9 - Encerrar atividades no estado RS.
 delete from funcionarios where estado = 'RS';<br/>
-Neste caso a tabela não muda pois o único funcionário que morava em RS se mudou 
+Neste caso a tabela não muda pois o único funcionário que morava em RS se mudou<br/>
 <img src="imagens/0linhas.png" alt="Exemplo" width="700" />
+## Etapa 10 - Listar funcionários de TI
+select nome, email, salario from funcionarios where setor = 'TI' 
+<img src="imagens/finc-ti.png" alt="Exemplo" width="700" />
+## Etapa 11 - Listar funcionários com salario menor que 4000
+select nome, setor, salario from funcionarios where salario < 4000 
+<img src="imagens/salario.png" alt="Exemplo" width="700" />
+## Etapa 12 - Listar funcionários que não trabalham no setor financeiro
+select nome, cidade, setor from funcionarios where setor <> 'Financeiro'
+<img src="imagens/no-finan.png" alt="Exemplo" width="700" />
