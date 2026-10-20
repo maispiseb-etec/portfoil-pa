@@ -1,0 +1,129 @@
+/* Estilo simples do site Galapagos Forge */
+:root {
+    --preto: #101010;
+    --cinza-escuro: #202020;
+    --cinza: #bdbdbd;
+    --branco: #f7f7f7;
+    --laranja: #ff7417;
+    --laranja-claro: #ff9a45;
+}
+body {
+    background-color: var(--preto);
+    color: var(--branco);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar, footer {
+    background-color: #080808;
+}
+.navbar-brand {
+    color: var(--laranja) !important;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.nav-link {
+    color: #eeeeee !important;
+}
+.nav-link:hover, .nav-link.active {
+    color: var(--laranja) !important;
+}
+.logo-menu {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-right: 8px;
+}
+.hero {
+    background: linear-gradient(120deg, #171717, #29201a);
+    border-bottom: 4px solid var(--laranja);
+    padding: 65px 0;
+}
+.hero h1, h2, h3 {
+    font-weight: 700;
+}
+.destaque, .laranja {
+    color: var(--laranja);
+}
+.btn-laranja {
+    background-color: var(--laranja);
+    border-color: var(--laranja);
+    color: #111;
+    font-weight: bold;
+}
+.btn-laranja:hover {
+    background-color: var(--laranja-claro);
+    border-color: var(--laranja-claro);
+    color: #111;
+}
+.card {
+    height: 100%;
+    background-color: var(--cinza-escuro);
+    color: var(--branco);
+    border: 1px solid #444;
+    border-top: 3px solid var(--laranja);
+}
+.card .card-title {
+    color: var(--laranja-claro);
+}
+.caixa-conteudo {
+    background-color: #1c1c1c;
+    border-left: 4px solid var(--laranja);
+    padding: 22px;
+    border-radius: 5px;
+}
+.imagem-destaque {
+    width: 100%;
+    max-height: none;
+    object-fit: contain;
+      transform: scale(1.30);
+}
+.form-control, .form-control:focus {
+    background-color: #292929;
+    color: white;
+    border-color: #555;
+}
+.form-control::placeholder {
+    color: #bdbdbd;
+}
+footer {
+    border-top: 1px solid #393939;
+    color: #bdbdbd;
+}
+footer a {
+    color: var(--laranja-claro);
+    text-decoration: none;
+}
+.separador {
+    height: 4px;
+    width: 75px;
+    background-color: var(--laranja);
+    margin: 14px 0 24px;
+}
+.texto-cinza {
+    color: #c9c9c9;
+}
+@media (max-width: 576px) {
+    .hero { padding: 42px 0; }
+    .hero h1 { font-size: 2rem; }
+}
+
+/* Caixas interativas da página de jogos */
+.game-card { overflow: hidden; transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+.game-card:hover { transform: translateY(-7px); border-color: var(--laranja); box-shadow: 0 12px 28px rgba(255,116,23,.16); }
+.game-banner { min-height: 190px; padding: 22px; display: flex; flex-direction: column; justify-content: flex-end; position: relative; overflow: hidden; background-color: #292929; border-bottom: 3px solid var(--laranja); }
+.game-banner::before { content: ""; position: absolute; width: 180px; height: 180px; border: 24px solid rgba(255,116,23,.22); border-radius: 50%; top: -65px; right: -35px; transition: transform .3s ease; }
+.game-card:hover .game-banner::before { transform: scale(1.18) rotate(15deg); }
+.banner-ilhas { background: linear-gradient(135deg,#14343b,#202020 75%); }
+.banner-forja { background: linear-gradient(135deg,#51240f,#202020 75%); }
+.banner-abrigo { background: linear-gradient(135deg,#344047,#202020 75%); }
+.game-number { position: absolute; top: 15px; left: 20px; color: var(--laranja); font-size: 2rem; font-weight: bold; }
+.game-category { color: var(--laranja-claro); font-size: .75rem; font-weight: bold; letter-spacing: 1.5px; position: relative; }
+.game-banner h2 { position: relative; margin: 6px 0 0; color: white; font-size: 1.8rem; }
+.game-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+.game-tags span { border: 1px solid #555; border-radius: 20px; padding: 4px 10px; color: #ddd; font-size: .8rem; }
+.game-details { background-color: #111; border-left: 3px solid var(--laranja); padding: 16px; border-radius: 4px; animation: aparecer .25s ease; }
+.game-details h3 { font-size: 1.1rem; color: var(--laranja-claro); margin-bottom: 12px; }
+.game-details p { color: #dedede; font-size: .94rem; line-height: 1.65; }
+.btn-outline-warning { color: var(--laranja-claro); border-color: var(--laranja); }
+.btn-outline-warning:hover { background-color: var(--laranja); border-color: var(--laranja); color: #111; }
+@keyframes aparecer { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) { .game-card, .game-banner::before { transition: none; } .game-details { animation: none; } }
